@@ -14,8 +14,22 @@ end
 
 def get_japanese_emoticon
   # code goes here
+library = load_library(file_path)
+result = library["get_emoticon"][emoticon]
+if result
+  result
+else
+  "Sorry, that emoticon was not found"
+end
 end
 
 def get_english_meaning
   # code goes here
+library = load_library(file_path)
+result = library["get_meaning"][emoticon]
+if result
+  result
+else
+  "Sorry, that emoticon was not found"
+end
 end
